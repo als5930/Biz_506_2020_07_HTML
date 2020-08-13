@@ -31,7 +31,7 @@ header {
 	text-align: center;
 	padding: 1.5rem;
 	/*기본적으로 필요한 요소*/
-	background-image: url("../images/003.jpg");
+	background-image: url("../images/004.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 100%;
@@ -63,7 +63,7 @@ button tag에만 style을 지정하자
 */
 #button button {
 	background-color: #216bf3;
-	color: white;
+	color: rgb(255, 255, 255);
 	border: none;
 	/*
 
@@ -111,6 +111,18 @@ marign, padding의 값 지정
 
      */
 	margin: 10px auto;
+
+
+	/* R, G, B*/
+	/* 16진수로 색상표현 #으로 시작하고 16진수 00~FF 범위의 값을 표현하면 된다*/
+	background-color: #4305eb;
+
+	/* 10진수 차입으로 색상 표현 
+	rgb()함수를 사용하여 각각 R,G,B값을 0~255 범위에서 표현하면 된다*/
+	background-color: rgb(0, 255, 0);
+
+	/* R,G,B,A(Alpha)*/
+	background-color: rgba(46,82,46,0.2);
 }
 
 .blog_title {
