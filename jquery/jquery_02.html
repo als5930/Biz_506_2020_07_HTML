@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+        $(function(){
+        //    $("div").css("background-color","blue")
+            $("div").text("korea")
+            $("div").css("height","30px")
+            $("div").css("margin","10px")
+
+            var sw= -1
+            $("div").click(function(){
+                if(sw > 0){
+                    $("div").removeClass("divs_blue")
+                    $(this).addClass("divs_red")
+                }else{
+                    $("div").removeClass("divs_red")
+                    $(this).addClass("divs_blue")
+
+                }
+                sw *=-1
+            })
+        })
+
+    </script>
+
+    <style>
+.divs_red{
+    background-color: red;
+    color: white;
+}
+.divs_blue{
+
+    background-color: blue;
+    color: white;
+}
+
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>
