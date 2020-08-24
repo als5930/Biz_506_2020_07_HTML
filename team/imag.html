@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script src="main.js"></script>
+    <style>
+      * {
+        margin: 30;
+        padding: 50;
+      }
+      ul,
+      li {
+        list-style: none;
+      }
+      .slide {
+        height: 300px;
+        overflow: hidden;
+      }
+      .slide ul {
+        width: calc(100% * 4);
+        display: flex;
+        animation: slide 8s infinite;
+      } /* slide를 8초동안 진행하며 무한반복 함 */
+      .slide li {
+        width: calc(100% / 4);
+        height: 300px;
+      }
+
+      @keyframes slide {
+        0% {
+          margin-left: 0;
+        } /* 0 ~ 10  : 정지 */
+        10% {
+          margin-left: 0;
+        } /* 10 ~ 25 : 변이 */
+        25% {
+          margin-left: -100%;
+        } /* 25 ~ 35 : 정지 */
+        35% {
+          margin-left: -100%;
+        } /* 35 ~ 50 : 변이 */
+        50% {
+          margin-left: -200%;
+        }
+        60% {
+          margin-left: -200%;
+        }
+        75% {
+          margin-left: -300%;
+        }
+        85% {
+          margin-left: -300%;
+        }
+        100% {
+          margin-left: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>여행</header>
+
+    <div class="slide">
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+
+    <div class="slide">
+      <ul>
+        <li>
+          <a href="#"
+            ><img
+              src="http://img1.daumcdn.net/thumb/R1920x0/?fname=http%3A%2F%2Fcfile4.uf.tistory.com%2Fimage%2F99C7143A5BEE75FB3092D4"
+              alt=""
+              title="이미지1"
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img
+              src="http://img1.daumcdn.net/thumb/R1920x0/?fname=http%3A%2F%2Fcfile10.uf.tistory.com%2Fimage%2F99C7223A5BEE75FB303A8E"
+              alt=""
+              title="이미지2"
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img
+              src="http://img1.daumcdn.net/thumb/R1920x0/?fname=http%3A%2F%2Fcfile7.uf.tistory.com%2Fimage%2F9982093A5BEE75FC259992"
+              alt=""
+              title="이미지3"
+          /></a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
