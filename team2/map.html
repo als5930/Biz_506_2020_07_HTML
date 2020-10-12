@@ -1,34 +1,26 @@
-<!DOCTYPE html>
+<!-- * 카카오맵 - 지도퍼가기 -->
+<!-- 1. 지도 노드 -->
+<div
+  id="daumRoughmapContainer1602498908050"
+  class="root_daum_roughmap root_daum_roughmap_landing"
+></div>
 
-<html>
-  <head>
-    <meta charset="utf-8" />
+<!--
+	2. 설치 스크립트
+	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+-->
+<script
+  charset="UTF-8"
+  class="daum_roughmap_loader_script"
+  src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"
+></script>
 
-    <title>Daum 지도 시작하기</title>
-  </head>
-
-  <body>
-    <div id="map" style="width: 800px; height: 600px"></div>
-
-    <script
-      type="text/javascript"
-      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d37349b164b9d5949c0a96db1a67fa20"
-    ></script>
-
-    <script>
-      var container = document.getElementById("map");
-
-      var options = {
-        center: new daum.maps.LatLng(33.450701, 126.570667),
-
-        level: 3,
-      };
-
-      var map = new daum.maps.Map(container, options);
-
-      function setCenter(lat, lng) {
-        map.setCenter(new daum.maps.LatLng(lat, lng));
-      }
-    </script>
-  </body>
-</html>
+<!-- 3. 실행 스크립트 -->
+<script charset="UTF-8">
+  new daum.roughmap.Lander({
+    timestamp: "1602498908050",
+    key: "22emq",
+    mapWidth: "250",
+    mapHeight: "250",
+  }).render();
+</script>

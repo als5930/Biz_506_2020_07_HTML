@@ -31,7 +31,13 @@ p {
 summary {
   margin: 5px;
   text-align: center;
+  cursor: pointer;
 }
 #p1 {
   text-align: center;
+}
+
+div#daumRoughmapContainer1602495539411 {
+  margin-left: auto;
+  margin-right: auto;
 }
