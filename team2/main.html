@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link href="static/css/menu.css" rel="stylesheet" />
+    <link href="static/css/imag.css" rel="stylesheet" />
+    <script src="main.js"></script>
+    <script href=""></script>
+    <style>
+  section#main-body{
+		width: 100%;
+		display: flex;
+	}
+	
+	section#main-body article{
+		flex: 1;
+		margin: 10px;
+		border: 1px solid blue;
+	
+	}
+
+    </style>
+  </head>
+
+  <body>
+    <h1>문화탐방</h1>
+    <nav id="main-nav">
+      <ul id="main-menu">
+        <li><a  href="main.html">HOME</a></li>
+        <li>
+          <a>시대별 추천코스</a>
+          <ul id="sub-menu">
+            <li><a href="page1.html">삼국 시대</a></li>
+            <li><a href="page2.html">고려 시대</a></li>
+            <li><a href="page3.html">조선 시대</a></li>
+            
+          </ul>
+        </li>
+        <li>
+          <a>지역별 추천코스</a>
+          <ul id="sub-menu">
+            <li><a href="page4.html">경기 지방</a></li>
+            <li><a href="page5.html">관동 지방</a></li>
+            <li><a href="page6.html">호서 지방</a></li>
+            <li><a href="page7.html">호남 지방</a></li>
+            <li><a href="page8.html">경남 지방</a></li>
+          </ul>
+        </li>
+        
+        <li><a href="page9.html">인기별 추천코스</a></li>
+      
+    </nav>
+    
+        <div class="mySlides fade">
+          <img src="static/images/11.jpg"  />
+        </div>
+        <div class="mySlides fade">
+          <img src="static/images/12.jpg" />
+        </div>
+        <div class="mySlides fade">
+          <img src="static/images/13.jpg" />
+       
+      </div>
+      <br />
+  
+      <div style="text-align: center"></div>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </body>
+  <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+  </script>
+</html>
