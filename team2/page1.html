@@ -41,7 +41,7 @@
     <!-- 회색 배경의 <div> 영역을 선언 -->
   
 
-    <div>
+    <div >
       <img src="static/images/13.jpg" align="left" />
       <h1>충주고구려비전시관</h1>
       <p>
@@ -50,7 +50,7 @@
         장수왕이 남한강 유역을 공략한 후 세운 기념비로 추정, 고구려비로 명명됐다. 이후 보호각이 건립됐고 2012년에 드디어 충주고구려비전시관이 문을 열었다. 
         전시관은 고구려의 유산, 설화, 생활상, 역사와 함께 안악 3호분, 광개토대왕비, 충주 고구려비 발견 과정 등을 소개하고 있다. 
         충주 고구려비의 위대한 역사적 가치를 느낄 수 있다.</p>
-      
+    
       <!-- 문서 전체의 좌측 상단을 기준으로 왼쪽에서 20px, 위에서 50px 떨어진 곳에 이미지를 위치시킴. 
 스크롤을 좌우로 움직여봐도 이미지는 고정되어 움직이지 않음 -->
     </div>
@@ -60,7 +60,6 @@
       <summary>더 많은 내용</summary>
       <!-- 이 제목을 마우스로 클릭함으로써 <details> 요소를 보이도록 할 수도 있고 숨길 수도 있습니다.-->
       <p id="p1"> 
-       
         <a>주소 :	충청북도 충주시 중앙탑면 감노로 2319</a><br>
         <a>휴일	: 매주 월요일, 1월 1일, 설날, 추석</a></br>
         <a>이용요금	: 무료</a></br>
@@ -69,6 +68,42 @@
         <a>문의 및 안내 :	043-850-7301</a></br>
         
       </p>
+      
+          <!-- * 카카오맵 - 지도퍼가기 -->
+    <!-- 1. 지도 노드 -->
+    <div
+    id="daumRoughmapContainer1602495539411"
+    class="root_daum_roughmap root_daum_roughmap_landing"
+  ></div>
+  <!--
+2. 설치 스크립트
+* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+-->
+  <script
+    charset="UTF-8"
+    class="daum_roughmap_loader_script"
+    src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"
+  ></script>
+  <!-- 3. 실행 스크립트 -->
+  <script id="map" charset="UTF-8">
+    new daum.roughmap.Lander({
+      timestamp: "1602495539411",
+      key: "22em3",
+      mapWidth: "400",
+      mapHeight: "400",
+      
+    }).render();
+    
+    function relayout() {    
+    
+    // 지도를 표시하는 div 크기를 변경한 이후 지도가 정상적으로 표출되지 않을 수도 있습니다
+    // 크기를 변경한 이후에는 반드시  map.relayout 함수를 호출해야 합니다 
+    // window의 resize 이벤트에 의한 크기변경은 map.relayout 함수가 자동으로 호출됩니다
+    map.relayout();
+}
+    
+    
+  </script>
     </details>
 
     <div>
@@ -97,6 +132,7 @@
         <a>문의 및 안내 :	041-746-8435</a></br>
         
       </p>
+      
     </details>
 
     <div>
