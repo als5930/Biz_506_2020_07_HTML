@@ -11,56 +11,39 @@
     <script src="main.js"></script>
     <script href=""></script>
     <style>
-  section#main-body {
-            display: flex;
-            flex-wrap: wrap;
-            height: 50%;
-        }
-
-        #sub-main{
-          
-          margin: 100px;
-          width: 300px;
-          height: 350px;
-         text-align: center;
-         cursor: pointer;
-
-        }
-        input{
-          padding:5px;
-          margin: 10px;
-          width: 600px;
-          
-        }
-        button{
-          cursor: pointer;
-          width: 50px;
-          height: 30px;
-          color: black;
-          background-color: yellowgreen;
-        }
+ 
 
     </style>
   </head>
 
   <body>
-    <h1>문화탐방<input><button>검색</button></h1>
+    <h1>문화탐방</h1>
     <nav id="main-nav">
       <ul id="main-menu">
-        <li><a  href="main.html">HOME</a></li>
+        <li><a>HOME</a></li>
         <li>
           <a>시대별 추천코스</a>
+          <ul id="sub-menu">
+            <li><a href="page1.html">고궁/성</a></li>
+            <li><a href="page2.html">고택/생가</a></li>
+            <li><a href="page3.html">유적지/사적지</a></li>
+          </ul>
         </li>
         <li>
           <a>지역별 추천코스</a>
+          <ul id="sub-menu">
+            <li><a href="page4.html">경기 지방</a></li>
+            <li><a href="page5.html">관동 지방</a></li>
+            <li><a href="page6.html">호서 지방</a></li>
+            <li><a href="page7.html">호남 지방</a></li>
+            <li><a href="page8.html">경남 지방</a></li>
+          </ul>
         </li>
-        
         <li><a href="page9.html">인기별 추천코스</a></li>
-        <li id="join"><a>회원가입</a></li>
-        <li id="login"><a>로그인</a></li>
-        <li id="logout"><a>로그아웃</a></li>
-        
-    </nav>
+        <li><a>회원가입</a></li>
+        <li><a>로그인</a></li>
+      </ul>
+    </nav>  
     
         <div class="mySlides fade">
           <img src="static/images/11.jpg"  />
@@ -79,9 +62,7 @@
         <span class="dot"></span>
         <span class="dot"></span>
       </div>
-      <div id="sub-main">세부사항
-          <img src="static/images/">
-      </div>
+      
        
     </section>
     </body>

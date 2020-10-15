@@ -37,7 +37,33 @@ summary {
   text-align: center;
 }
 
-div#daumRoughmapContainer1602495539411 {
-  margin-left: auto;
-  margin-right: auto;
+#main-input {
+  margin: 5px;
+  padding: 30px;
+  display: flex;
+  width: 30%;
+  text-rendering: auto;
+}
+
+button {
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: rgb(18, 184, 134);
+  color: white;
+  border-radius: 4px;
+  padding: 0px 1.25rem;
+  height: 2rem;
+  font-size: 1rem;
+}
+
+#main-input,
+button {
+  font-family: inherit;
 }
