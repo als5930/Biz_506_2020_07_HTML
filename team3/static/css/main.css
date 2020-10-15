@@ -14,7 +14,7 @@ h1 {
   text-align: center;
 }
 
-nav {
+nav ul {
   width: 100%;
   display: flex;
 
@@ -25,7 +25,7 @@ nav {
     #004d7a,
     #008793,
     #00bf72,
-    #a8eb12
+    #6d990e
   );
   cursor: pointer;
 }
@@ -59,20 +59,12 @@ li {
   transition: all 0.15s ease-in;
 }
 
-#sub-menu li a {
-  color: white;
-  text-decoration: none;
-}
-
 #main-menu li:hover #sub-menu {
   opacity: 1;
   visibility: visible;
   text-align: center;
 }
 
-#sub-menu li a:hover {
-  text-decoration: underline;
-}
-#main-nav ul li:nth-child(4) {
+#main-nav ul li:nth-child(5) {
   margin-left: auto;
 }
