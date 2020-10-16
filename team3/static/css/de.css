@@ -1,0 +1,54 @@
+#content {
+  width: 960px;
+  margin: 40px auto 0 auto;
+  font-size: 20px;
+}
+.tourView {
+  overflow: hidden;
+}
+.tourView .mainImg {
+  width: 400px;
+  float: left;
+}
+#content .tourView .mainImg p {
+  margin: 0px;
+}
+.tourView .mainImg img {
+  width: 400px;
+  height: 247px;
+}
+img {
+  border: 0px;
+}
+
+.tourView .txtData {
+  float: right;
+  width: 500px;
+  font-size: 20px;
+  color: #666;
+}
+
+#content .tabWrap {
+  overflow: hidden;
+}
+#content .tabWrap li {
+  float: left;
+  width: 100%;
+  margin-top: 0px !important;
+}
+#content .tabWrap li {
+  float: left;
+  width: 100%;
+  margin-top: 0px !important;
+}
+.tourView .summary {
+  clear: both;
+  padding: 25px 10px 0 10px;
+  border-top: 1px solid #000;
+}
+.summary {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #000;
+}
