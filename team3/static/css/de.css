@@ -1,41 +1,60 @@
 #content {
-  width: 960px;
+  width: 1300px;
   margin: 40px auto 0 auto;
   font-size: 20px;
 }
+
+h2 {
+  display: block;
+  margin: 0 0 40px 0;
+  padding: 15px 20px;
+  font-size: 30px;
+  background-color: #999;
+  background-image: none;
+  background-attachment: fixed;
+  border-bottom: 1px solid #000;
+}
+
+span {
+  text-align: center;
+}
 .tourView {
   overflow: hidden;
+  border-top: 1px solid #666;
 }
+
 .tourView .mainImg {
   width: 400px;
-  float: left;
+  text-align: end;
+  border: 0px;
 }
 #content .tourView .mainImg p {
-  margin: 0px;
+  max-width: 100%;
 }
 .tourView .mainImg img {
   width: 400px;
   height: 247px;
+  position: fixed;
+  margin: 0px;
+  text-decoration: none;
 }
 img {
-  border: 0px;
+  resize: both;
+  max-width: 500px;
 }
-
 .tourView .txtData {
   float: right;
   width: 500px;
   font-size: 20px;
   color: #666;
+  margin: 0 0 20px 10px;
+  padding-right: 10px;
+  width: 50%;
 }
-
 #content .tabWrap {
   overflow: hidden;
 }
-#content .tabWrap li {
-  float: left;
-  width: 100%;
-  margin-top: 0px !important;
-}
+
 #content .tabWrap li {
   float: left;
   width: 100%;
@@ -43,12 +62,29 @@ img {
 }
 .tourView .summary {
   clear: both;
-  padding: 25px 10px 0 10px;
-  border-top: 1px solid #000;
+  padding: 50px 100px 0 10px;
 }
 .summary {
   display: block;
   margin-bottom: 15px;
   font-size: 16px;
   color: #000;
+}
+#content .tabWrap li a span {
+  display: block;
+  height: 35px;
+  padding-top: 8px;
+}
+div #btn-save {
+  margin: 10px -50px;
+  height: 20px;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: rebeccapurple;
+  color: whitesmoke;
+  border-radius: 5px;
+  top: 88%;
+  left: 88%;
 }
