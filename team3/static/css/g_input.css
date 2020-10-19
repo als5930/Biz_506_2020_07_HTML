@@ -1,53 +1,57 @@
-table.table2 {
-  border-collapse: separate;
-  border-spacing: 1px;
-  text-align: left;
-  line-height: 1.5;
-  border-top: 1px solid #ccc;
-  margin: 20px 10px;
+form#write-form {
+  width: 80%;
+  margin: 10px auto;
 }
-table.table2 tr {
-  width: 50px;
-  padding: 10px;
+form#write-form fieldset {
+  border: 1px solid purple;
+  border-radius: 10px;
+}
+form#write-form legend {
+  color: purple;
+  margin: 5px;
+  padding: 5px;
+}
+form#write-form label {
+  display: inline-block;
+  width: 20%;
+  padding: 4px;
+  margin: 4px;
+  color: purple;
+  text-align: right;
   font-weight: bold;
-  vertical-align: top;
-  border-bottom: 1px solid #ccc;
 }
-table.table2 td {
-  width: 100px;
-  padding: 10px;
-  vertical-align: top;
-  border-bottom: 1px solid #ccc;
+form#write-form input {
+  display: inline-block;
+  width: 70%;
+  padding: 4px;
+  margin: 4px;
 }
-.btn {
-  height: 20px;
-  width: 100px;
-  margin: 10px -50px;
-  position: relative;
-  top: 95%;
-  left: 95%;
+form#write-form textarea {
+  width: 70%;
 }
 
-.btn button {
-  display: inline-flex;
-  -webkit-box-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  justify-content: center;
-  font-weight: bold;
-  cursor: pointer;
-  outline: none;
-  border: none;
-  background: rgb(18, 184, 134);
+div.button-box {
+  text-align: right;
+}
+
+form#write-form .button-box button {
   color: white;
-  border-radius: 6px;
-  padding: 10px 1.25rem;
-  height: 2rem;
-  font-size: 1rem;
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  padding: 10px 16px;
+  margin: 5px;
+  border-radius: 5px;
 }
 
-.btn button :hover {
-  background-color: honeydew;
-  color: black;
-  border-bottom: 2px solid rgb(4, 247, 234);
+button:hover {
+  box-shadow: 2px 2px 2px rbga(0, 0, 0, 0.5);
+}
+
+button#list {
+  background-color: orange;
+}
+
+button#save {
+  background-color: brown;
 }
