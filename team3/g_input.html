@@ -4,23 +4,9 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>게시판작성</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-<link rel="stylesheet" href="${rootPath}/resources/summernote/summernote-bs4.min.css">
-<script src="${rootPath}/resources/summernote/summernote-bs4.min.js"></script>
-<script src="${rootPath}/resources/summernote/lang/summernote-ko-KR.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <link href="static/css/g_input.css" rel="stylesheet" />
   </head>
-  <link href="static/css/main.css" rel="stylesheet" />
-  <link href="static/css/g_input.css" rel="stylesheet" />
-
   <body>
-
     <h1>문화탐방</h1>
     <nav id="main-nav">
       <ul id="main-menu">
@@ -32,59 +18,34 @@
         <li><a href="login.html">로그인</a></li>
       </ul>
     </nav>
-    
-    <form id="write-form">
-      <fieldset>
-         <legend>글쓰기</legend>
-         <div>
-            <label>작성일자</label>
-            <input name="b_date">
-         </div>
-         <div>
-            <label>작성시각</label>
-            <input name="b_time">
-         </div>
-         <div>
-            <label>글쓴이</label>
-            <input name="b_writer">
-         </div>
-         
-         <div>
-            <label>제목</label>
-            <input name="b_subject">
-         </div>
-         <div>
-            <label></label>
-            <textarea id="b_content" rows="5" cols="20"></textarea>
-            
-         </div>
-         <div class="button-box">
-           <button type="button" id ="list">리스트</button>
-           <button type="button" id ="save">저장</button>
-         
-         </div>
-      </fieldset>
-   </form>
-   <script>
-    $(function(){
-      var toolbar = [
-        ['style',['bold','italic','underline'] ],
-        ['fontsize',['fontsize']],
-        ['font Style',['fontname']],
-        ['color',['color']],
-        ['para',['ul','ol','paragraph']],
-        ['height',['height']],
-        ['table',['table']],
-        ['insert',['link','hr','picture']],
-        ['view',['fullscreen','codeview']]
-        
-      ]
-      
-      $("#b_content").summernote({lang:"ko-KR", 
-                    width:"80%", 
-                    height:"200px",
-                    toolbar : toolbar
-                  });
-    })
-  </script>
+    <header>
+        <h2>게시판 작성</h2>
+    <form method="POST" id="write-form">
+
+      <div>
+        <label>작성자</label>
+        <input name="g_me" />
+      </div>
+
+      <div>
+        <label>보내는 날짜</label>
+        <input name="g_date" />
+      </div>
+      <div>
+        <label>보내는 시각</label>
+        <input name="g_time" />
+      </div>
+      <div>
+        <label>제목</label>
+        <input name="g_subject" />
+      </div>
+      <div>
+        <label>내용</label>
+        <textarea name="g_content"></textarea>
+      </div>
+      <div class="button-box">
+        <button id="list">저장</button>
+      </div>
+    </form>
+  </body>
 </html>
