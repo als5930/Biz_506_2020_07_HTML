@@ -110,6 +110,7 @@ form#write-form .button-box button {
 button:hover {
   box-shadow: 2px 2px 2px rbga(0, 0, 0, 0.5);
 }
-button#list {
+button#g-save {
   background-color: orange;
+  color: white;
 }
